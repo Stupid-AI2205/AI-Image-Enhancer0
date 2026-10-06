@@ -1,1 +1,1 @@
-RealESRGAN_x4plus.pth downlode online and place it inside model folder
+RealESRGAN_x4plus.pth download online and place it inside the model folder
