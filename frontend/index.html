@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Image Enhancer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            AI<span>Enhance</span>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            AI Engine Online
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <p class="tag">
+                AI POWERED IMAGE ENHANCEMENT
+            </p>
+
+            <h1>
+                Make your images<br>
+                <span>sharper & clearer.</span>
+            </h1>
+
+            <p class="subtitle">
+                Enhance image resolution using our AI
+                super-resolution engine.
+            </p>
+
+        </section>
+
+
+        <section class="upload-section">
+
+            <div id="dropZone" class="drop-zone">
+
+                <div class="upload-icon">
+                    ↑
+                </div>
+
+                <h2>
+                    Drop your image here
+                </h2>
+
+                <p>
+                    or click to browse
+                </p>
+
+                <span>
+                    JPG, PNG or WEBP
+                </span>
+
+                <input
+                    type="file"
+                    id="fileInput"
+                    accept="image/jpeg,image/png,image/webp"
+                    hidden
+                >
+
+            </div>
+
+
+            <div id="previewSection" class="preview-section hidden">
+
+                <div class="image-card">
+
+                    <div class="image-header">
+                        <span>Original</span>
+
+                        <span id="originalSize">
+                            -
+                        </span>
+                    </div>
+
+                    <img
+                        id="originalImage"
+                        src=""
+                        alt="Original image"
+                    >
+
+                </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="image-card">
+
+                    <div class="image-header">
+                        <span>Enhanced</span>
+
+                        <span id="enhancedSize">
+                            -
+                        </span>
+                    </div>
+
+                    <div class="enhanced-container">
+
+                        <img
+                            id="enhancedImage"
+                            src=""
+                            alt="Enhanced image"
+                        >
+
+                        <div
+                            id="loading"
+                            class="loading hidden"
+                        >
+                            <div class="spinner"></div>
+
+                            <p>
+                                AI is enhancing...
+                            </p>
+
+                            <span>
+                                This may take a while on CPU
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="actionSection"
+                class="action-section hidden"
+            >
+
+                <button
+                    id="enhanceButton"
+                    class="enhance-button"
+                >
+                    Enhance with AI
+                </button>
+
+                <button
+                    id="resetButton"
+                    class="reset-button"
+                >
+                    Choose another image
+                </button>
+
+            </div>
+
+
+            <div
+                id="downloadSection"
+                class="download-section hidden"
+            >
+
+                <a
+                    id="downloadButton"
+                    class="download-button"
+                    href="#"
+                    download
+                >
+                    Download Enhanced Image
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Powered by Real-ESRGAN
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
